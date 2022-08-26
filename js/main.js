@@ -1,5 +1,9 @@
 
 $(window).on("load", function(){
+
+    $('.nav-link').click(function(){$('.navbar-collapse').collapse('hide');});
+    $('body').click(function(){$('.navbar-collapse').collapse('hide');});
+
     let slideIndex = $(".slide.active").index();
     const slideLength = $('.slide').length;
 
@@ -106,15 +110,6 @@ $(window).on("load", function(){
 
 $(document).ready(function(){
 
-    //fixed header
-    $(window).scroll(function(){
-        if ($(this).scrollTop() > 100) {
-            $("header").addClass("fixed");
-        } else {
-            $("header").removeClass("fixed");
-        }
-    })
- 
     // Filtering between Bridesmaids and Groomsmen
     filterPeople($(".filter-btn.active").attr("data-target"))
     function filterPeople(target){

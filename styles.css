@@ -99,9 +99,20 @@ header .navbar{
     background-color: rgba(0,0,0,.4);
 }
 
-@media (max-width: 500px){
+@media (max-width: 1000px){
     header .navbar{
         background-color: rgba(0,0,0,1);
+        position: fixed;
+        width: 100vw;
+        border-bottom: 4px rgba(0,0,0,.4);
+    }
+    .navbar-toggler{
+        margin-right: 10px !important;
+    }
+}
+@media (max-width: 500px){
+    .navbar-toggler{
+        margin-right: 0 !important;
     }
 }
 
@@ -558,8 +569,8 @@ header .navbar ul li a:hover{
 @media (max-width: 768px){
     .box{
         margin: 0;
-        max-width: 50vw;
-        height: 95vh;
+        max-width: 50vw !important;
+        height: 95vh !important;
 	    padding: 80px 10px !important;
         top: 0;
         left: 5px;
@@ -596,7 +607,7 @@ header .navbar ul li a:hover{
 
 @media (max-width: 480px){
     .coutdown-container{
-        height: 50vh;
+        height: 50vh !important;
         background: url(./images/newPhotos/squared.jpeg) !important;
         background-size: cover !important;
         background-attachment: fixed;
@@ -604,8 +615,8 @@ header .navbar ul li a:hover{
     }
     .box{
         margin: 0;
-        max-width: 50vw;
-        height: 48vh;
+        max-width: 50vw !important;
+        height: 48vh !important;
 	    padding: 10px;
         top: 0;
         left: 5px;
@@ -649,8 +660,8 @@ header .navbar ul li a:hover{
     }
     .box{
         margin: 0;
-        max-width: 50vw;
-        height: 48vh;
+        max-width: 50vw !important;
+        height: 48vh !important;
 	    padding: 10px !important;
         top: 0;
         left: 5px;

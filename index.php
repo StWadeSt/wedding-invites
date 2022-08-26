@@ -86,10 +86,10 @@ if (isset($_POST['btnSubmit'])) {
                             <a class="nav-link" href="#location">Venue Details</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#accordion">FAQ</a>
+                            <a class="nav-link" href="#faq">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#rsvp-section">RSVP</a>
+                            <a class="nav-link" href="#rsvp-section">RSVP</a>
                         </li>
                     </ul>
                 </div>
@@ -134,7 +134,8 @@ if (isset($_POST['btnSubmit'])) {
         </div>
     </section>
     <!-- Photo gallery -->
-    <section class="gallery-section" id="gallery-section">
+    <div id="gallery-section" style="margin-bottom: 20px;"></div>
+    <section class="gallery-section">
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -238,9 +239,10 @@ if (isset($_POST['btnSubmit'])) {
     </div>
 
     <!-- Bridal Party -->
+    <div id="bridal-party" style="margin-bottom: 20px;"></div>
     <section class="people-section">
         <div class="container">
-            <div class="row" id="bridal-party">
+            <div class="row">
                 <div class="section-title">
                     <h2>Bridal Party</h2>
                 </div>
@@ -260,9 +262,7 @@ if (isset($_POST['btnSubmit'])) {
                             <h4>Dylan <span>Best man</span></h4>
                         </div>
                         <div class="people-item-message">
-                            <p>
-                                ""~ <span>from Dylan</span>
-                            </p>
+                            <p>"Ek wens julle twee oneindige geluk, liefde en rykdom. Julle twee maak mekaar net beter en julle is perfek vir mekaar. Ek waardeer julle baie en ek is baie lief vir julle❤️"~ <span> Dylan</span></p>
                         </div>
                     </div>
                 </div>
@@ -369,7 +369,8 @@ if (isset($_POST['btnSubmit'])) {
     </section>
 
     <!-- Venue Info -->
-    <div id="location" class="container location-container">
+    <div id="location" style="margin-bottom: 20px;"></div>
+    <div class="container location-container">
         <div class="row">
             <div class="section-title">
                 <h2>Venue Details</h2>
@@ -453,7 +454,8 @@ if (isset($_POST['btnSubmit'])) {
 
 
     <!-- Frequently asked questions -->
-    <div class="accordion accordion-flush" id="accordion">
+    <div id="faq" style="margin-bottom: 40px;"></div>
+    <div class="accordion accordion-flush">
         <div class="section-title">
             <h2>Frequently Asked Questions</h2>
         </div>
@@ -551,7 +553,8 @@ if (isset($_POST['btnSubmit'])) {
     </div>
 
     <!-- RSVP Section -->
-    <section class="rsvp-section" id="rsvp-section">
+    <div id="rsvp-section" style="margin-bottom: 20px;"></div>
+    <section class="rsvp-section">
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -594,7 +597,7 @@ if (isset($_POST['btnSubmit'])) {
                         </div>
                         <div class="row" styles="min-height: 100px;">
                             <div class="input-group" styles="min-height: 100px;">
-                                <textarea name="music-request" class="input-control" cols="30" rows="10" placeholder="Music request: please list the name of the artist as well" required styles="min-height: 100px;"></textarea>
+                                <textarea name="music-request" class="input-control" cols="30" rows="10" placeholder="Music request: with artist name" required styles="min-height: 100px;"></textarea>
                             </div>
                         </div>
                         <button type="submit" name="btnSubmit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -626,13 +629,9 @@ if (isset($_POST['btnSubmit'])) {
     <p class="copyright">copyright &copy; 2022 Stuart Stuurman</p>
 
 
-    <script src="./js/jquery.min.js">
-
-    </script>
-    <script src="./js/main.js">
-
-    </script>
-    <script>
+    <script defer src="./js/jquery.min.js"></script>
+    <script defer src="./js/main.js"></script>
+    <script defer>
         function getName(value) {
 
 
