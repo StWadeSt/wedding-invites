@@ -174,7 +174,7 @@ if (isset($_POST['btnSubmit'])) {
                 <!-- gallery item start  -->
                 <div class="gallery-item">
                     <div class="gallery-item-inner">
-                        <img class="img-thumbnail" src="./images/newPhotos/slide/image3.jpeg" data-large="./images/newPhotos/slide/image3.jpeg" alt="image" />
+                        <img class="img-thumbnail" src="./images/newPhotos/slide/image12.jpeg" data-large="./images/newPhotos/slide/image3.jpeg" alt="image" />
                     </div>
                 </div>
                 <!-- gallery item end  -->
@@ -473,19 +473,6 @@ if (isset($_POST['btnSubmit'])) {
         </div>
         <hr>
         <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Do you have a gift registery?
-                </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>We do not have a gift register however monetary gifts are optional.</strong>
-                </div>
-            </div>
-            <hr>
-        </div>
-        <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     What is the dress code?
@@ -506,7 +493,7 @@ if (isset($_POST['btnSubmit'])) {
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <strong>Option 1: Pap <br><br> Option 2: Reis</strong>
+                    <strong>#1 Beef Wellington served with honey giazed baby vegetables and potato dauphinoise and a carrot puree.<br><br> #2 Lamb shoulder drizzled with a red wine jus served with carrot puree, potato croquettes and garlic suateed baby vegetables.</strong>
                 </div>
             </div>
         </div>
@@ -576,7 +563,7 @@ if (isset($_POST['btnSubmit'])) {
                         </div>
                         <div class="row">
                             <div class="input-group">
-                                <select name="attendingOption" id="select-attendance" class="input-control" onchange="saveValue(value)" required>
+                                <select name="attendingOption" id="select-attendance" class="input-control" required>
                                     <option value="Yes, I will be attending">I am attending</option>
                                     <option value="Unfortunately, I won't be attending">I am not attending</option>
                                 </select>
@@ -587,10 +574,8 @@ if (isset($_POST['btnSubmit'])) {
                                 <div id="food">
                                     <select name="foodOption" id="select-food" class="input-control" required>
                                         <option value="">Food options</option>
-                                        <option value="1">Option 1</option>
-                                        <option value="2">Option 2</option>
-                                        <option value="3">Option 3</option>
-                                        <option value="4">Option 4</option>
+                                        <option value="1">#1 - Beef Wellington served with honey giazed baby vegetables and potato dauphinoise and a carrot puree.</option>
+                                        <option value="2">#2 - Lamb shoulder drizzled with a red wine jus served with carrot puree, potato croquettes and garlic suateed baby vegetables.</option>
                                     </select>
                                 </div>
                             </div>
