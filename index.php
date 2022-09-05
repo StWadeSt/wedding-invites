@@ -143,48 +143,53 @@ if (isset($_POST['btnSubmit'])) {
                 </div>
             </div>
             <div class="row">
-                <!-- gallery item start -->
-                <div class="gallery-item">
-                    <div class="gallery-item-inner">
-                        <img class="img-thumbnail" src="./images/newPhotos/slide/image1.jpeg" data-large="./images/newPhotos/slide/image1.jpeg" alt="image" />
+                <div class="column">
+                    <!--gallery item start  -->
+                    <div class="gallery-item">
+                        <div class="gallery-item-inner _5">
+                            <img class="img-thumbnail" src="./images/newPhotos/slide/image6.jpeg" data-large="/images/newPhotos/slide/image6.jpeg" alt="image" />
+                        </div>
                     </div>
-                </div>
-                <!-- gallery item end  -->
-                <!-- gallery item start  -->
-                <div class="gallery-item">
-                    <div class="gallery-item-inner">
-                        <img class="img-thumbnail" src="./images/newPhotos/slide/image7.jpeg" data-large="./images/newPhotos/slide/image7.jpeg" alt="image" />
+                    <!--gallery item start  -->
+                    <div class="gallery-item">
+                        <div class="gallery-item-inner _2">
+                            <img class="img-thumbnail" src="./images/newPhotos/slide/image12.jpeg" data-large="/images/newPhotos/slide/image12.jpeg" alt="image" />
+                        </div>
                     </div>
+                    <!-- gallery item end -->
                 </div>
-                <!-- gallery item end -->
-                <!--gallery item start  -->
-                <div class="gallery-item">
-                    <div class="gallery-item-inner">
-                        <img class="img-thumbnail" src="./images/newPhotos/slide/image6.jpeg" data-large="./images/newPhotos/slide/image6.jpeg" alt="image" />
+                <div class="column">
+                    <!-- gallery item start  -->
+                    <div class="gallery-item">
+                        <div class="gallery-item-inner _3">
+                            <img class="img-thumbnail" src="./images/newPhotos/slide/image2.jpeg" data-large="/images/newPhotos/slide/image2.jpeg" alt="image" />
+                        </div>
                     </div>
-                </div>
-                <!-- gallery item end -->
-                <!--gallery item start  -->
-                <div class="gallery-item">
-                    <div class="gallery-item-inner">
-                        <img class="img-thumbnail" src="./images/newPhotos/slide/image2.jpeg" data-large="./images/newPhotos/slide/image2.jpeg" alt="image" />
+                    <!-- gallery item end -->
+                    <!-- gallery item start  -->
+                    <div class="gallery-item">
+                        <div class="gallery-item-inner _4">
+                            <img class="img-thumbnail" src="./images/newPhotos/slide/image7.jpeg" data-large="/images/newPhotos/slide/image7.jpeg" alt="image" />
+                        </div>
                     </div>
+                    <!-- gallery item end  -->
                 </div>
-                <!-- gallery item end -->
-                <!-- gallery item start  -->
-                <div class="gallery-item">
-                    <div class="gallery-item-inner">
-                        <img class="img-thumbnail" src="./images/newPhotos/slide/image12.jpeg" data-large="./images/newPhotos/slide/image3.jpeg" alt="image" />
+                <div class="column">
+                    <!-- gallery item start -->
+                    <div class="gallery-item">
+                        <div class="gallery-item-inner _1">
+                            <img class="img-thumbnail " src="./images/newPhotos/slide/image1.jpeg" data-large="/images/newPhotos/slide/image1.jpeg" alt="image" />
+                        </div>
                     </div>
-                </div>
-                <!-- gallery item end  -->
-                <!-- gallery item start  -->
-                <div class="gallery-item">
-                    <div class="gallery-item-inner">
-                        <img class="img-thumbnail" src="./images/newPhotos/slide/image4.jpeg" data-large="./images/newPhotos/slide/image4.jpeg" alt="image" />
+                    <!-- gallery item end -->
+                    <!--gallery item start  -->
+                    <div class="gallery-item">
+                        <div class="gallery-item-inner _6">
+                            <img class="img-thumbnail" src="./images/newPhotos/slide/image4.jpeg" data-large="/images/newPhotos/slide/image4.jpeg" alt="image" />
+                        </div>
                     </div>
+                    <!-- gallery item end  -->
                 </div>
-                <!-- gallery item end  -->
             </div>
         </div>
     </section>
@@ -266,8 +271,6 @@ if (isset($_POST['btnSubmit'])) {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row justify-content-center">
                 <div class="people-item" data-category="groomsmen">
                     <div class="people-item-inner">
                         <img src="./images/Bridal Party/guys/Stuart.jpg" alt="groomsmen">
@@ -323,8 +326,6 @@ if (isset($_POST['btnSubmit'])) {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row justify-content-center">
                 <div class="people-item" data-category="bridesmaids">
                     <div class="people-item-inner">
                         <img src="./images/Bridal Party/girls/Katelyn.jpeg" alt="bridesmaid">
@@ -398,6 +399,15 @@ if (isset($_POST['btnSubmit'])) {
                     <img loading="lazy" src="./images/venue-image2.jpeg" alt="photo of venue">
                     <img loading="lazy" src="./images/venue-image3.jpeg" alt="photo of venue">
                 </div>
+                <section id="Program">
+                    <div class="container">
+                        <div class="row">
+                            <div class="program">
+                                <img class="prog-image" src="./images/newPhotos/slide/prog.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <h3 style="margin-top: 50px ;">Looking for the venue?</h3>
                 <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.269534460115!2d18.797625719864584!3d-34.03695648228327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc4b3229c00bf7%3A0xd2a3f3e1e1bb7c92!2sWinery%20Road%20Forest!5e0!3m2!1sen!2sza!4v1658927740937!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="accommodation-container">
@@ -574,15 +584,15 @@ if (isset($_POST['btnSubmit'])) {
                                 <div id="food">
                                     <select name="foodOption" id="select-food" class="input-control" required>
                                         <option value="">Food options</option>
-                                        <option value="1">#1 - Beef Wellington served with honey giazed baby vegetables and potato dauphinoise and a carrot puree.</option>
-                                        <option value="2">#2 - Lamb shoulder drizzled with a red wine jus served with carrot puree, potato croquettes and garlic suateed baby vegetables.</option>
+                                        <option value="1">Option 1 : Beef Wellington served with honey giazed baby vegetables and potato dauphinoise and a carrot puree.</option>
+                                        <option value="2">Option 2 : Lamb shoulder drizzled with a red wine jus served with carrot puree, potato croquettes and garlic suateed baby vegetables.</option>
                                     </select>
                                 </div>
                             </div>
                         </div>
                         <div class="row" styles="min-height: 100px;">
                             <div class="input-group" styles="min-height: 100px;">
-                                <textarea name="music-request" class="input-control" cols="30" rows="10" placeholder="Music request: with artist name" required styles="min-height: 100px;"></textarea>
+                                <textarea name="music-request" class="input-control" cols="30" rows="10" placeholder="Music request: with artist name" styles="min-height: 100px;"></textarea>
                             </div>
                         </div>
                         <button type="submit" name="btnSubmit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -611,7 +621,7 @@ if (isset($_POST['btnSubmit'])) {
     </div>
 
     <!-- Copyright -->
-    <p class="copyright">copyright &copy; 2022 Stuart Stuurman</p>
+    <p class="copyright">copyright &copy; 2022 <br> Designed by Stuart & Tiffany</p>
 
 
     <script defer src="./js/jquery.min.js"></script>

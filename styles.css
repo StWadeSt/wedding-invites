@@ -323,6 +323,19 @@ header .navbar ul li a:hover{
     text-align: center;
 }
 
+
+.gallery-section .row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.gallery-section .row .column{
+    flex: 33.3%;
+    width: auto;
+    overflow: hidden;
+}
+
 .section-title h2{
     color: #0e0d0d;
     font-weight: bold;
@@ -333,7 +346,7 @@ header .navbar ul li a:hover{
 .gallery-section .gallery-item{
     flex: 0 0 33.33%;
     max-width: 33.33vw;
-    padding: 10px;
+    padding: 5px;
 }
 @media (max-width: 768px){
     .gallery-section .gallery-item{
@@ -345,6 +358,14 @@ header .navbar ul li a:hover{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+@media (max-width: 500px){
+    .gallery-section .row .column{
+        flex: 100%;
+    }
+    .gallery-section .row{
+        margin-left: 0 !important;
     }
 }
 
@@ -745,8 +766,8 @@ header .navbar ul li a:hover{
 }
 
 .people-item{
-    flex: 0 0 33.33%;
-    max-width: 250px !important;
+    flex: 0 0 40%;
+    max-width: 350px !important;
     padding: 15px;
     margin-top: 25px;
     display: none;
@@ -766,8 +787,8 @@ header .navbar ul li a:hover{
 }
 @media (min-width: 768px){
     .people-item{
-        flex: 0 0 33.33% !important;
-        max-width: 40% !important;
+        flex: 0 0 45% !important;
+        max-width: 35% !important;
         margin: 40px auto;
     }
 }
@@ -854,6 +875,32 @@ header .navbar ul li a:hover{
 .venue-description p{
     font-size: x-large;
 }
+
+/* ******* Program Section******** */
+#Program{
+    margin-top: 35px !important;
+    background-color:rgb(175, 171, 171);
+}
+
+.prog-image{
+    margin: auto !important;
+    padding-top: 30px  !important;
+    padding-bottom: 30px;
+    height: 90vh !important;
+    border-radius: 8px;
+}
+@media (max-width: 480px){
+    .prog-image{
+        height: 75vh !important;
+    }
+}
+@media (max-width: 400px){
+    .prog-image{
+        height: 75vh !important;
+    }
+}
+
+
 
 /* Accommodation List */
 .accommodation-container{
