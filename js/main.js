@@ -124,4 +124,5 @@ $(document).ready(function(){
             filterPeople($(this).attr("data-target"))
         }
     })
+
 })

@@ -316,26 +316,13 @@ header .navbar ul li a:hover{
 
 .gallery-section{
     padding: 80px 0;
+    display: flex;
 }
 
 .section-title{
     margin: 20px auto 50px !important;
     text-align: center;
 }
-
-
-.gallery-section .row{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.gallery-section .row .column{
-    flex: 33.3%;
-    width: auto;
-    overflow: hidden;
-}
-
 .section-title h2{
     color: #0e0d0d;
     font-weight: bold;
@@ -343,31 +330,42 @@ header .navbar ul li a:hover{
     font-size: 40px;
 }
 
-.gallery-section .gallery-item{
-    flex: 0 0 33.33%;
-    max-width: 33.33vw;
-    padding: 5px;
+.images-row{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 300px;
+    grid-auto-flow: dense;
 }
-@media (max-width: 768px){
-    .gallery-section .gallery-item{
-        flex: 0 0 45%;
-        max-width: 45vw;
-        padding: 10px;
+
+.images-row .gallery-item-inner.tall{
+    grid-row: span 2;
+}
+.images-row .gallery-item-inner.wide{
+    grid-column: span 2;
+}
+.images-row .gallery-item-inner.big{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.gallery-item-inner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 560px){
+    .gallery-item-inner.wide{
+        grid-column: span 1 !important;
     }
-    .gallery-section .row{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .gallery-item-inner.big{
+        grid-row: span 1 !important;
+        grid-column: span 1 !important;
     }
 }
-@media (max-width: 500px){
-    .gallery-section .row .column{
-        flex: 100%;
-    }
-    .gallery-section .row{
-        margin-left: 0 !important;
-    }
-}
+
 
 .gallery-section .gallery-item-inner{
     overflow: hidden;
@@ -392,7 +390,7 @@ header .navbar ul li a:hover{
     top: 0;
     right: 0;
     bottom: 0;
-    margin: auto;
+    margin: auto !important;
     width: 100vw;
     height: 100vh;
     z-index: 1099;
@@ -405,6 +403,13 @@ header .navbar ul li a:hover{
 
 .gallery-popup.open{
     display: flex;
+    margin: auto !important;
+}
+
+@media (max-width: 500px){
+    .gallery-popup.open{
+        left: 0 !important;
+    }
 }
 
 .gallery-popup img .gp-img{
@@ -413,6 +418,7 @@ header .navbar ul li a:hover{
     max-width: 90vw;
     max-height: 500px;
     padding: 40px 0;
+    margin: auto !important;
 }
 
 .gallery-popup .gp-container{
@@ -937,6 +943,19 @@ header .navbar ul li a:hover{
 .accom-list ul li a{
     list-style: none;
     text-decoration: none !important;
+}
+
+.venue-images{
+    max-width: 1100px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.venue-images img{
+    width: 80%;
+    height: auto;
+    object-fit: cover !important;
 }
 
 

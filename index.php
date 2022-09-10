@@ -67,7 +67,7 @@ if (isset($_POST['btnSubmit'])) {
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Wedding Invitation</a>
+                <a class="navbar-brand" href="#">Cameron & Robin</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -80,10 +80,10 @@ if (isset($_POST['btnSubmit'])) {
                             <a class="nav-link" href="#coutdown-section">Countdown</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#bridal-party">Bridal Party</a>
+                            <a class="nav-link" href="#location">Venue Details</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#location">Venue Details</a>
+                            <a class="nav-link" href="#bridal-party">Bridal Party</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#faq">FAQ</a>
@@ -142,54 +142,41 @@ if (isset($_POST['btnSubmit'])) {
                     <h2>Gallery</h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="column">
-                    <!--gallery item start  -->
-                    <div class="gallery-item">
-                        <div class="gallery-item-inner _5">
-                            <img class="img-thumbnail" src="./images/newPhotos/slide/image6.jpeg" data-large="/images/newPhotos/slide/image6.jpeg" alt="image" />
-                        </div>
-                    </div>
-                    <!--gallery item start  -->
-                    <div class="gallery-item">
-                        <div class="gallery-item-inner _2">
-                            <img class="img-thumbnail" src="./images/newPhotos/slide/image12.jpeg" data-large="/images/newPhotos/slide/image12.jpeg" alt="image" />
-                        </div>
-                    </div>
-                    <!-- gallery item end -->
+            <div class="images-row">
+                <!--gallery item start  -->
+                <div class="gallery-item-inner tall">
+                    <img class="img-thumbnail" src="./images/newPhotos/slide/image6.jpeg" data-large="./images/newPhotos/slide/image6.jpeg" alt="image" />
                 </div>
-                <div class="column">
-                    <!-- gallery item start  -->
-                    <div class="gallery-item">
-                        <div class="gallery-item-inner _3">
-                            <img class="img-thumbnail" src="./images/newPhotos/slide/image2.jpeg" data-large="/images/newPhotos/slide/image2.jpeg" alt="image" />
-                        </div>
-                    </div>
-                    <!-- gallery item end -->
-                    <!-- gallery item start  -->
-                    <div class="gallery-item">
-                        <div class="gallery-item-inner _4">
-                            <img class="img-thumbnail" src="./images/newPhotos/slide/image7.jpeg" data-large="/images/newPhotos/slide/image7.jpeg" alt="image" />
-                        </div>
-                    </div>
-                    <!-- gallery item end  -->
+                <!--gallery item start  -->
+                <div class="gallery-item-inner wide">
+                    <img class="img-thumbnail" src="./images/newPhotos/slide/image9.jpeg" data-large="./images/newPhotos/slide/image9.jpeg" alt="image" />
                 </div>
-                <div class="column">
-                    <!-- gallery item start -->
-                    <div class="gallery-item">
-                        <div class="gallery-item-inner _1">
-                            <img class="img-thumbnail " src="./images/newPhotos/slide/image1.jpeg" data-large="/images/newPhotos/slide/image1.jpeg" alt="image" />
-                        </div>
-                    </div>
-                    <!-- gallery item end -->
-                    <!--gallery item start  -->
-                    <div class="gallery-item">
-                        <div class="gallery-item-inner _6">
-                            <img class="img-thumbnail" src="./images/newPhotos/slide/image4.jpeg" data-large="/images/newPhotos/slide/image4.jpeg" alt="image" />
-                        </div>
-                    </div>
-                    <!-- gallery item end  -->
+                <!-- gallery item end -->
+                <!-- gallery item start  -->
+                <div class="gallery-item-inner tall">
+                    <img class="img-thumbnail" src="./images/newPhotos/slide/image7.jpeg" data-large="./images/newPhotos/slide/image7.jpeg" alt="image" />
                 </div>
+                <!-- gallery item end  -->
+                <!-- gallery item start  -->
+                <div class="gallery-item-inner big">
+                    <img class="img-thumbnail" src="./images/newPhotos/slide/image2.jpeg" data-large="./images/newPhotos/slide/image2.jpeg" alt="image" />
+                </div>
+                <!-- gallery item end -->
+                <!-- gallery item start -->
+                <div class="gallery-item-inner  tall">
+                    <img class="img-thumbnail " src="./images/newPhotos/slide/image1.jpeg" data-large="./images/newPhotos/slide/image1.jpeg" alt="image" />
+                </div>
+                <!-- gallery item end -->
+                <!--gallery item start  -->
+                <div class="gallery-item-inner wide">
+                    <img class="img-thumbnail" src="./images/newPhotos/slide/image4.jpeg" data-large="./images/newPhotos/slide/image4.jpeg" alt="image" />
+                </div>
+                <!-- gallery item end  -->
+                <!--gallery item start  -->
+                <div class="gallery-item-inner tall">
+                    <img class="img-thumbnail" src="./images/newPhotos/image1.jpeg" data-large="./images/newPhotos/slide/image4.jpeg" alt="image" />
+                </div>
+                <!-- gallery item end  -->
             </div>
         </div>
     </section>
@@ -394,7 +381,7 @@ if (isset($_POST['btnSubmit'])) {
                             while open fire baskets create a warm atmosphere for friends and loved ones to connect.</p>
                     </div>
                 </div>
-                <div>
+                <div class="venue-images">
                     <img loading="lazy" src="./images/venue-image.PNG" alt="photo of venue">
                     <img loading="lazy" src="./images/venue-image2.jpeg" alt="photo of venue">
                     <img loading="lazy" src="./images/venue-image3.jpeg" alt="photo of venue">
@@ -568,7 +555,7 @@ if (isset($_POST['btnSubmit'])) {
 
                             </div>
                             <div class="input-group">
-                                <input type="text" class="input-control rsvp-code" id="rsvp-code" value="" onchange="getName(value)" placeholder="RSVP Code" name="rsvpCode" required>
+                                <input type="text" class="input-control rsvp-code" id="rsvp-code" value="" placeholder="RSVP Code" name="rsvpCode" required>
                             </div>
                         </div>
                         <div class="row">
@@ -629,10 +616,9 @@ if (isset($_POST['btnSubmit'])) {
     <script defer>
         function getName(value) {
 
+            var guestList = ['Stuart', 'Ethan', 'Wilbur', 'Constance', 'Nolan', 'Daune', 'Monique', 'Tashlyn', 'Dominique', 'Tifanny', 'Robert Cunningham', 'Shirna Cunningham', 'Caitlin Cunningham', 'Matilda Cunningham', 'Ellen', 'Delina', 'Mark', 'Easton', 'Cludia', 'Peter', 'Shireen', 'Gurshon', 'Mandy', 'Zelda', 'Sharon', 'Johanna Myburgh', 'Liezel Wates', 'Johny Wates', 'Urshula', 'Oom Miller', 'Lorrette', 'Emile', 'Shenise', 'Tamzon', 'Eden', 'Dylan', 'Jeremy', 'Grant', 'Yolanda', 'Adrian', 'Devin', 'Brett', 'Ross', 'Anthony', 'Frieda', 'Rheeda', 'Petra', 'Oom Jan', 'Cyrileen', 'Granville', 'Dizelle', 'Akshay', 'Denray', 'Jennica Jacobs', 'Jenine Thockey', 'Ferlin Arends', 'Jennah Hurree', 'Boitumelo Diale', 'Bonga Magazi', 'Maahier Maloon', 'Xaviar Poole', 'Donna Europa', 'Nurhal', 'Nico Busby', 'Ryab Busby', 'Shuan Baron', 'Yolanda Baron', 'Jo-Ann Solomans', 'Selvin Solomans', 'Dawie Olivier', 'Elenor Olivier', 'Ann Smith', 'Leigh-Lynn Le Fleur', 'Sandra Bason', 'Japhet Kalombo', 'Mano Olivier', 'Maxine Olivier', 'Sheroll Jansen', 'Trevor Jansen', 'Nadine Patterson', 'Rochelle Jasson', 'Donnie Jasson', 'Maurisha Jasson', 'Lauren Jasson', 'Arthur Kayster', 'Andrea Hendricks', 'Maurisha Olivier', 'Zhaundrea Bason', 'Gavin Klein', 'Angie Klein', 'Raedene Naidoo', 'Anver Naidoo', 'Linda Patterson', 'Ben Patterson', 'Marie Smith', 'Jaco Smith', 'Robin', 'Cameron', 'Kaylin Kleynhans'];
 
-            var guestList = ['Stuart', 'Ethan', 'Wilbur', 'Constance', 'Nolan', 'Daune', 'Monique', 'Tashlyn', 'Dominique', 'Tifanny', 'Robert Cunningham', 'Shirna Cunningham', 'Caitlin Cunningham', 'Matilda Cunningham', 'Ellen', 'Delina', 'Mark', 'Easton', 'Cludia', 'Peter', 'Shireen', 'Gurshon', 'Mandy', 'Zelda', 'Sharon', 'Johanna Myburgh', 'Liezel Wates', 'Johny Wates', 'Urshula', 'Oom Miller', 'Lorrette', 'Emile', 'Shenise', 'Tamzon', 'Eden', 'Dylan', 'Jeremy', 'Grant', 'Yolanda', 'Adrian', 'Devin', 'Brett', 'Ross', 'Anthony', 'Frieda', 'Rheeda', 'Petra', 'Oom Jan', 'Cyrileen', 'Granville', 'Dizelle', 'Akshay', 'Denray', 'Jennica Jacobs', 'Jenine Thockey', 'Ferlin Arends', 'Jennah Hurree', 'Boitumelo Diale', 'Bonga Magazi', 'Maahier Maloon', 'Xaviar Poole', 'Donna Europa', 'Nurhal', 'Nico Busby', 'Ryab Busby', 'Shuan Baron', 'Yolanda Baron', 'Jo-Ann Solomans', 'Selvin Solomans', 'Dawie Olivier', 'Elenor Olivier', 'Ann Smith', 'Leigh-Lynn Le Fleur', 'Sandra Bason', 'Japhet Kalombo', 'Mano Olivier', 'Maxine Olivier', 'Sheroll Jansen', 'Trevor Jansen', 'Nadine Patterson', 'Rochelle Jasson', 'Donnie Jasson', 'Maurisha Jasson', 'Lauren Jasson', 'Arthur Kayster', 'Andrea Hendricks', 'Maurisha Olivier', 'Zhaundrea Bason', 'Gavin Klein', 'Angie Klein', 'Raedene Naidoo', 'Anver Naidoo', 'Linda Patterson', 'Ben Patterson', 'Marie Smith', 'Jaco Smith'];
-
-            var rsvpList = ['1272', '1380', '1486', '1688', '1138', '1860', '1976', '1085', '2324', '2475', '2595', '2644', '2773', '2877', '2997', '1593', '1720', '2070', '2170', '2232', '3019', '3101', '3295', '3387', '3409', '3576', '3605', '3786', '3824', '3991', '4015', '4182', '4263', '4335', '4439', '4567', '4611', '4709', '4895', '4950', '5042', '5142', '5218', '5311', '5427', '5579', '5688', '5703', '5811', '5956', '6010', '6193', '6280', '6378', '6465', '6580', '6678', '6768', '6810', '6983', '7036', '7119', '7200', '7314', '7417', '7592', '7655', '7707', '7851', '7995', '8041', '8101', '8250', '8354', '8488', '8575', '8652', '8763', '8888', '8941', '9019', '9101', '9254', '9387', '9468', '9507', '9672', '9706', '9863', '9900', '10068', '10111', '10210', '10328', '10479', '10565'];
+            var rsvpList = ['1272', '1380', '1486', '1688', '1138', '1860', '1976', '1085', '2324', '2475', '2595', '2644', '2773', '2877', '2997', '1593', '1720', '2070', '2170', '2232', '3019', '3101', '3295', '3387', '3409', '3576', '3605', '3786', '3824', '3991', '4015', '4182', '4263', '4335', '4439', '4567', '4611', '4709', '4895', '4950', '5042', '5142', '5218', '5311', '5427', '5579', '5688', '5703', '5811', '5956', '6010', '6193', '6280', '6378', '6465', '6580', '6678', '6768', '6810', '6983', '7036', '7119', '7200', '7314', '7417', '7592', '7655', '7707', '7851', '7995', '8041', '8101', '8250', '8354', '8488', '8575', '8652', '8763', '8888', '8941', '9019', '9101', '9254', '9387', '9468', '9507', '9672', '9706', '9863', '9900', '10068', '10111', '10210', '10328', '10479', '10565', '9534', '9687', '9746'];
 
             var limit = rsvpList.length + 9;
             value = value.trim('');
@@ -648,10 +634,10 @@ if (isset($_POST['btnSubmit'])) {
                         if (guestName != null) {
                             document.getElementById("form-check").innerHTML +=
                                 `
-                                    <h3 class="guest-name" style="">
-                                    ${guestName}
-                                    <h3/>
-                                `
+                                <h3 class="guest-name" style="">
+                                ${guestName}
+                                <h3/>
+                            `
                         } else {
                             alert("Incorrect RSVP Code. Please ensure that you enter a valid code.");
                             document.getElementById('rsvp-code').value = '';
@@ -661,28 +647,6 @@ if (isset($_POST['btnSubmit'])) {
             } else {
                 alert("Incorrect RSVP Code. Please ensure that you enter a valid code.");
                 document.getElementById('rsvp-code').value = '';
-            }
-        }
-
-        function saveValue(value) {
-            alert('')
-            if (value === "Unfortunately, I won't be attending") {
-                var element = document.getElementById("food");
-                element.value = null;
-                while (element.firstChild) {
-                    element.removeChild(element.firstChild);
-                };
-            } else {
-                document.getElementById("food").innerHTML +=
-                    `
-                    <select name="foodOption" id="select-food" class="input-control" required>
-                        <option value="">Food options</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                        <option value="4">Option 4</option>
-                        </select>
-                `
             }
         }
     </script>

@@ -11,13 +11,13 @@
 </head>
 
 <body>
-    <div style=" margin-top: 30vh; text-align: center; padding: 0 5px; background-color: #ffffff;">
+    <div style=" margin: auto 0; text-align: center; padding: 0 5px; background-color: #ffffff;">
         <div class="error-title">
             <h2>Confirmation Error</h2><br>
         </div>
         <h2>
             You have already confirmed. <br /><br>
-            If your situation has changed please contact us directly.<br /><br>
+            If your attendance or food option has changed please contact us directly.<br /><br>
             Thank You
         </h2>
         <h3>
